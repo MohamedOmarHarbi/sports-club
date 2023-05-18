@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="lions-club-logo-general-1024x945.png"></link>
+	<title>Contact Us</title>
+    <style>
+        body {
+            background-image: url(Download-Sport-wallpaper.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    
+form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+
+label {
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+
+input[type=submit] {
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+input[type=submit]:hover {
+  background-color: #5c45a0;
+  background-image: linear-gradient(45deg,#56328f,#08ac4b);
+}
+
+    </style>
+</head>
+<body>
+	<h2 style="text-align: center; color: white;">Contact us</h2>
+	<form action="submit-form.php" method="post">
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="enter your name" required><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" placeholder="enter your email" required><br><br>
+		<label for="message">Message:</label>
+		<textarea id="message" name="message" placeholder="write your complaint" required></textarea><br><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

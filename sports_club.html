@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lions SC </title>
+    <link rel="stylesheet" href="sports_club.css">
+    <link rel="icon" href="/lions-club-logo-general-1024x945.png">
+    <link rel="icon" href="lions-club-logo-general-1024x945.png">
+</head>
+<body>
+   <section class="home">
+    <header>
+        <a href="sports_club.html" class="logo"><img src="lions-club-logo-general-1024x945.png" alt="" height="80px" width="80px"></a>
+        <ul>
+    <li><a href="sports_club.html">Home</a></li>
+    <li><a href="product.html">Product</a></li>
+    <li><a href="News.html">News</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="sign_in.html" class="sign">sign in</a></li>
+        </ul>
+    </header>
+    <div class="content">
+        <div class="textbox">
+            <h2>That's <br><span>I like</span></h2>
+            <p>
+            Welcome to our sports club website!
+            We are a community of sports enthusiasts who love to stay active and have fun while doing it.
+            Our club offers a variety of sports and activities that cater to all ages and skill levels.
+            Whether you are a seasoned athlete or a beginner, we have something for you.
+            </p>
+            <a href="product.html">View All Products</a>
+        </div>
+        <div class="imgbox">
+            <img src="man.png" alt="" class="sports">
+        </div>
+    </div>
+    <ul class="thumb">
+        <li><img src="running_man_PNG11679.png" alt="" onclick="imgSlider('running_man_PNG11679.png'); changeColor('#a18c02');"></li>
+        <li><img src="f.png" alt="" onclick="imgSlider('f.png'); changeColor('#2236b4');"></li>
+        <li><img src="R.png" alt="" onclick="imgSlider('R.png'); changeColor('black');"></li>
+        
+    </ul>
+   </section> 
+</body>
+</html>
+
+<script>
+    function imgSlider(someThing){
+        document.querySelector('.sports').src = someThing;
+    }
+    function changeColor(color){
+        const sec= document.querySelector('.home');
+        sec.style.background=color;
+    }
+</script>
